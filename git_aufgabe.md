@@ -35,8 +35,12 @@ du zeigst deinen Branch
 
 `git log --oneline --graph --all`
 
-<br>
 
+## 5. Schritt
+
+Wenn eine Fehlermeldung kommt auf Github.com gehen und dort den push ausführen.
+
+<br>
 
 # Frage: Merge den branch auf main
 
