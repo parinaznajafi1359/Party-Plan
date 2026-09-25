@@ -1,5 +1,5 @@
-Party TODO:
+git Party TODO:
 
 Spiele: Uno, Joker
 Trinken: Cola
-Essen: Chips, Äpfel
+Essen: Chips, Äpfel, Orange
