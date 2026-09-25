@@ -60,13 +60,15 @@ herzeigen mit:
 
 <br>
 
-## Frage: Mergen über Review mit Github
+# Frage: Mergen über Review mit Github
 
 Merge wird eigentlich nicht so ausgeführt sonder über eine Review in Github
 
 Nach deinem push erscheint auf github der Button „Compare & pull request“
 
 Hier sollte ein Vorgesetzter den push reviewen und gibt ihn frei wenn alles passt und dien branch wird gemerched
+
+<br>
 
 # Frage: Zeige mir den Branch den jemand anderer erstellt hat
 
@@ -108,6 +110,7 @@ untracked = Git sieht die Datei, verwaltet sie aber nicht  also eine neue Datei 
 
 irgnored = sie steht im .gitignore drinnen
 
+<br>
 
 # Frage: Was mach man mit `git rebase main`
 
@@ -124,7 +127,6 @@ Wenn es einen Konflikt gibt hält Git an dann muss man die Dateien öffnen und s
 <br>
 
 # Frage: Was sind die 3 wege um zu pushen
-
 
 `git push` = normaler push
 
