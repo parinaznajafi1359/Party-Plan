@@ -2,6 +2,8 @@
 
 ## 1. Schritt
 
+`git pull`
+
 `git switch -c feature/spiele`
 
 git switch = du wechselst in den branch
@@ -36,13 +38,9 @@ du zeigst deinen Branch
 `git log --oneline --graph --all`
 
 
-## 5. Schritt
-
-Wenn eine Fehlermeldung kommt auf Github.com gehen und dort den push ausführen.
-
 <br>
 
-# Frage: Merge den branch auf main
+# Frage: Merge den branch auf main (Lokales mergen mit fast forward)
 
 um wieder auf den main branch zu gehen machst du das:
 
@@ -62,6 +60,14 @@ herzeigen mit:
 
 <br>
 
+## Frage: Mergen über Review mit Github
+
+Merge wird eigentlich nicht so ausgeführt sonder über eine Review in Github
+
+Nach deinem push erscheint auf github der Button „Compare & pull request“
+
+Hier sollte ein Vorgesetzter den push reviewen und gibt ihn frei wenn alles passt und dien branch wird gemerched
+
 # Frage: Zeige mir den Branch den jemand anderer erstellt hat
 
 `git fetch`
@@ -72,17 +78,48 @@ herzeigen mit:
 
 # Frage: lösche den remote branch
 
-`git fetch --prune`
+`git switch main`
 
-`git branch -d feature/snacks`
+`git pull` = den Merge holen
 
-`git branch -a `
+`git branch -d feature/login` = lokalen Branch löschen
+
+`git fetch --prune` = veraltete Remote-Referenzen entfernen
+
+`git branch -a`
 
 <br>
 
+# Frage: Wie nimmt man einen commit zurück und as ist der unterschied zwischen --hard und --soft
+
+commits zurück nehmen funktioniert nur wenn sie noch nicht gepusht werden
+
+`git reset --soft` = Der Commit wird zurück genommen aber bleibt gestaged
+
+`git reset --hard` = Der Commit wird komplett zurück genommen alle nicht gespeicherten änderungen werden gelöscht
+
+<br>
+
+# Frage: Was bedeuted tracked, untracked und ignored?
+
+tracked = die Datei ist in mindestens einem Commit, Git beobachtet jede Änderung
+
+untracked = Git sieht die Datei, verwaltet sie aber nicht  also eine neue Datei die noch nie ge-add-et wurde
+
+irgnored = sie steht im .gitignore drinnen
+
+
 # Frage: Was mach man mit `git rebase main`
 
-damit kann man einen Konflikt lösen
+Wenn man an einem Projekt arbeitet auf einem brach aber der main branch ist in der zwischen zeit weiter gewachsen muss man ein rebase machen
+
+`git fetch origin`
+
+`git switch feature/payment`
+
+`git rebase origin/main`
+
+Wenn es einen Konflikt gibt hält Git an dann muss man die Dateien öffnen und sich die unterschiede anschauen und den Konflikt händisch lösen.
 
 <br>
 
